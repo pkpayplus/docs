@@ -3,11 +3,6 @@
   "theme": "sequoia",
   "name": "PkPayPlus Documentation",
 
-  "banner": {
-    "content": "Welcome to PkPayPlus Documentation",
-    "dismissible": false
-  },
-
   "colors": {
     "primary": "#1c51fb",
     "light": "#ffffff",
@@ -122,7 +117,8 @@
   },
 
   "appearance": {
-    "default": "system"
+    "default": "system",
+    "strict": true
   },
 
   "styling": {
