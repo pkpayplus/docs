@@ -12,54 +12,46 @@
   "favicon": "/favicon.ico",
 
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
     "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "href": "https://docs.pkpayplus.com/introduction",
+        "openapi": "api-reference/openapi.json"
+      },
       {
         "tab": "Guides",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index-copied-1",
+              "quickstart-copied-1",
+              "development-copied-1"
             ]
           },
           {
             "group": "Customization",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "essentials/settings-copied-1",
+              "essentials/navigation-copied-1"
             ]
           },
           {
             "group": "Writing content",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "essentials/markdown-copied-1",
+              "essentials/code-copied-1",
+              "essentials/images-copied-1",
+              "essentials/reusable-snippets-copied-1"
             ]
           },
           {
             "group": "AI tools",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "ai-tools/cursor-copied-1",
+              "ai-tools/claude-code-copied-1",
+              "ai-tools/windsurf-copied-1"
             ]
           }
         ]
