@@ -16,8 +16,11 @@
       {
         "tab": "Documentation",
         "icon": "book",
-        "href": "https://docs.pkpayplus.com/introduction",
-        "openapi": "api-reference/openapi.json"
+        "menu": [
+          {
+            "item": "Getting Started"
+          }
+        ]
       },
       {
         "tab": "Guides",
