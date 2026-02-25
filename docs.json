@@ -117,9 +117,5 @@
   },
   "icons": {
     "library": "lucide"
-  },
-  "banner": {
-    "content": "Welcome to PkPayPlus Documentation",
-    "dismissible": true
   }
 }
