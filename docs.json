@@ -15,24 +15,11 @@
     "tabs": [
       {
         "tab": "Documentation",
-        "icon": "book",
-        "menu": [
-          {
-            "item": "Getting Started"
-          }
-        ]
+        "icon": "book"
       },
       {
         "tab": "Guides",
         "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index-copied-1",
-              "quickstart-copied-1",
-              "development-copied-1"
-            ]
-          },
           {
             "group": "Customization",
             "pages": [
