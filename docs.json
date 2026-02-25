@@ -111,5 +111,8 @@
   },
   "appearance": {
     "default": "system"
+  },
+  "styling": {
+    "codeblocks": "dark"
   }
 }
