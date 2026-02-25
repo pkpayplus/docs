@@ -111,7 +111,10 @@
   "contextual": {
     "options": ["copy","view","chatgpt","claude","perplexity","cursor","vscode"]
   },
-  "appearance": { "default": "system" },
+  "appearance": {
+    "default": "system",
+    "strict": true
+  },
   "styling": { "codeblocks": "dark" },
   "icons": { "library": "lucide" }
 }
