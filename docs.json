@@ -109,7 +109,7 @@
   },
 
   "appearance": {
-    "default": "system",
+    "default": "dark",
     "strict": true
   },
 
@@ -123,6 +123,13 @@
   "background": {
     "color": {
       "light": "#1c51fb"
-    }
+    },
+    "decoration": "grid"
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "interaction": {
+    "drilldown": true
   }
 }
