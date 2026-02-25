@@ -83,10 +83,7 @@
       ]
     }
   },
-  "logo": {
-    "light": "/images/PkpayLogo.webp",
-    "dark": "/images/PkpayLogo.webp"
-  },
+  "logo": "/images/PkpayLogo.webp",
   "navbar": {
     "links": [
       {
