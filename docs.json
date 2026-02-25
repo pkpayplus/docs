@@ -114,5 +114,11 @@
   },
   "styling": {
     "codeblocks": "dark"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "banner": {
+    "dismissible": false
   }
 }
