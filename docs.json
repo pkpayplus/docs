@@ -1,69 +1,83 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "PkPayPlus Documentation",
+  "banner": {
+    "content": "🚀 PkPayPlus — docs for integration, API reference, and dashboard",
+    "dismissible": true
+  },
   "colors": {
     "primary": "#1c51fb",
     "light": "#ffffff",
-    "dark": "#1c51fb"
+    "dark": "#0f1724"
   },
   "favicon": "/favicon.ico",
+  "logo": "/images/PkpayLogo.webp",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "About",
+            "pages": ["introduction","how-it-works","pricing"]
+          }
+        ]
+      },
+      {
+        "tab": "Integration",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "integration/overview",
+              "integration/get-api-keys",
+              "integration/client-integration",
+              "integration/server-integration",
+              "integration/webhooks",
+              "integration/testing"
             ]
           },
           {
-            "group": "Customization",
+            "group": "SDKs & examples",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "integration/sdk/node",
+              "integration/sdk/python",
+              "integration/sdk/php",
+              "integration/snippets"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API",
         "groups": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
+            "group": "API reference",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Use cases",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "guides/one-time-payments",
+              "guides/subscriptions",
+              "guides/recurring-charges",
+              "guides/checkout-customization"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Help & Policies",
+            "pages": ["support/contact","support/faq","support/security"]
           }
         ]
       }
@@ -71,51 +85,33 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://www.pkpayplus.com",
+          "icon": "monitor"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Integration page",
+          "href": "https://www.pkpayplus.com/integration",
+          "icon": "link"
         }
       ]
     }
   },
-  "logo": "/images/PkpayLogo.webp",
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hello@pkpayplus.com"
-      }
+      { "label": "Support", "href": "mailto:hello@pkpayplus.com" },
+      { "label": "Dashboard", "href": "https://app.pkpayplus.com" }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Sign up / Login",
+      "href": "https://www.pkpayplus.com/login"
     }
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["copy","view","chatgpt","claude","perplexity","cursor","vscode"]
   },
-  "appearance": {
-    "default": "system"
-  },
-  "styling": {
-    "codeblocks": "dark"
-  },
-  "icons": {
-    "library": "lucide"
-  }
+  "appearance": { "default": "system" },
+  "styling": { "codeblocks": "dark" },
+  "icons": { "library": "lucide" }
 }
