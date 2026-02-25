@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "PkPayPlus",
   "colors": {
     "primary": "#1c51fb",
     "light": "#ffffff",
