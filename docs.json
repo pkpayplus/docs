@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "PkPayPlus Documentation",
   "colors": {
     "primary": "#1c51fb",
