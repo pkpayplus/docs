@@ -21,6 +21,11 @@
             "pages": [
               "introduction"
             ]
+          },
+          {
+            "group": "Accept Payments",
+            "icon": "credit-card",
+            "pages": []
           }
         ]
       }
