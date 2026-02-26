@@ -21,25 +21,26 @@
             ]
           },
           {
-            "group": "Accept Payments",
-            "icon": "credit-card",
-            "pages": ["accept-payments"]
-          },
-          {
-            "group": "Subscriptions",
-            "icon": "recycle",
-            "pages": ["subscriptions"]
-          },
-          {
-            "group": "Payouts",
-            "icon": "money-bill-1",
-            "pages": ["payouts"]
+            "group": "Features",
+            "icon": "layers",
+            "pages": [
+              "products",
+              "payment-links",
+              "customers",
+              "transactions",
+              "payouts",
+              "dispute",
+              "merchant-api-keys",
+              "merchant-id"
+            ]
           },
           {
             "group": "Integrations",
             "icon": "plug",
             "pages": [
-              "integrations/php"
+              "integrations/wordpress",
+              "integrations/php",
+              "integrations/laravel"
             ]
           }
         ]
