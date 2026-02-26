@@ -138,5 +138,18 @@
     "404": {
       "redirect": true
     }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "PK Pay Plus",
+        "items": [
+          {
+            "label": "PK Pay Plus",
+            "href": "/"
+          }
+        ]
+      }
+    ]
   }
 }
