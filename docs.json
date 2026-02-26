@@ -14,65 +14,15 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation"
-      },
-      {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Customization",
+            "group": "Getting Started",
             "pages": [
-              "essentials/settings-copied-1",
-              "essentials/navigation-copied-1"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown-copied-1",
-              "essentials/code-copied-1",
-              "essentials/images-copied-1",
-              "essentials/reusable-snippets-copied-1"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor-copied-1",
-              "ai-tools/claude-code-copied-1",
-              "ai-tools/windsurf-copied-1"
+              "introduction"
             ]
           }
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "External Integrations"
-      },
-      {
-        "tab": "Changelog"
-      },
-      {
-        "tab": "Community Projects"
       }
     ]
   },
