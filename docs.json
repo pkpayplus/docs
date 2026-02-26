@@ -112,7 +112,8 @@
   },
 
   "styling": {
-    "codeblocks": "dark"
+    "codeblocks": "dark",
+    "eyebrows": "section"
   },
 
   "icons": {
