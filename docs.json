@@ -121,8 +121,5 @@
   },
   "interaction": {
     "drilldown": true
-  },
-  "banner": {
-    "dismissible": false
   }
 }
