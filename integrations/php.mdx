@@ -1,0 +1,246 @@
+---
+title: 'PHP'
+description: 'Integrate PkPayPlus in PHP or Laravel using the official PHP SDK'
+icon: 'code'
+---
+
+The official **PkPayPlus PHP SDK** lets you use the Merchant API from plain PHP or Laravel. You can manage products, create and verify checkout sessions, and authenticate with your **Merchant Secret Key**.
+
+<Warning>
+This SDK is for **server-side (merchant backend)** use only. Never expose your secret key in frontend code.
+</Warning>
+
+## Requirements
+
+- PHP 8.1+
+- [Composer](https://getcomposer.org/)
+
+## Installation
+
+Install the SDK with Composer:
+
+```bash
+composer require pkpayplus/pkpayplus-php
+```
+
+## Configuration
+
+The SDK loads configuration in this order:
+
+1. Config array passed to `Client`
+2. Environment variables
+3. Default base URL
+
+### Environment variables (recommended)
+
+Create a `.env` file in your project root:
+
+```env
+PKPAYPLUS_SECRET_KEY=sk_live_xxxxxxxxx
+```
+
+Do not commit `.env` to version control.
+
+### Passing config manually
+
+You can pass options when creating the client:
+
+```php
+$pk = new Client([
+  'base_url' => 'https://api.pkpayplus.com',
+  'secret_key' => 'sk_live_xxx'
+]);
+```
+
+## Quick start (plain PHP)
+
+```php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use PkPayPlus\Client;
+
+$pk = new Client();
+
+$products = $pk->products()->list(['per_page' => 20]);
+
+print_r($products);
+```
+
+## Authentication
+
+All Merchant API requests use:
+
+```
+Authorization: Bearer {secret_key}
+```
+
+The SDK sets this header automatically when you use your secret key.
+
+## Products API
+
+The merchant is inferred from your secret key. The SDK uses these endpoints:
+
+| Method | Endpoint |
+|--------|----------|
+| GET | `/merchant-api/products` |
+| POST | `/merchant-api/products` |
+| GET | `/merchant-api/products/{product_id}` |
+| PUT | `/merchant-api/products/{product_id}` |
+| DELETE | `/merchant-api/products/{product_id}` |
+
+### List products
+
+```php
+$products = $pk->products()->list([
+  'per_page' => 20,
+  'page' => 1,
+  'search' => 'shirt'
+]);
+```
+
+### Create product
+
+```php
+$created = $pk->products()->create([
+  'name' => 'Black T-Shirt',
+  'description' => 'Cotton tee',
+  'status' => 'draft',
+  'currency' => 'USD',
+  'unit_amount' => 1999
+]);
+
+$productId = $created['product']['id'];
+```
+
+### Get product
+
+```php
+$product = $pk->products()->get($productId);
+```
+
+### Update product
+
+```php
+$updated = $pk->products()->update($productId, [
+  'name' => 'Black T-Shirt (Updated)',
+  'status' => 'published'
+]);
+```
+
+### Delete product
+
+```php
+$pk->products()->delete($productId);
+```
+
+## Checkout sessions (Merchant API)
+
+Use checkout sessions for backend-driven flows (e.g. WooCommerce-style plugins).
+
+Endpoints:
+
+- `POST /merchant-api/{merchant_id}/checkout-sessions` — create session
+- `GET /merchant-api/{merchant_id}/{session_id}` — get/verify session
+
+### Create checkout session
+
+```php
+$session = $pk->sessions()->create($merchantId, [
+  'amount' => 1999,
+  'currency' => 'USD',
+  'description' => 'Order #1001',
+  'source' => 'custom_php'
+]);
+
+$sessionId = $session['session_id'];
+```
+
+### Verify checkout session
+
+```php
+$status = $pk->sessions()->verify($merchantId, $sessionId);
+```
+
+## Laravel usage
+
+### .env
+
+Add to your `.env`:
+
+```env
+PKPAYPLUS_BASE_URL=https://api.pkpayplus.com
+PKPAYPLUS_SECRET_KEY=sk_live_xxx
+```
+
+### config/services.php
+
+Register the PkPayPlus config:
+
+```php
+'pkpayplus' => [
+    'base_url' => env('PKPAYPLUS_BASE_URL'),
+    'secret_key' => env('PKPAYPLUS_SECRET_KEY'),
+],
+```
+
+### Example usage
+
+```php
+$pk = new \PkPayPlus\Client(config('services.pkpayplus'));
+
+$products = $pk->products()->list();
+```
+
+## Testing
+
+The SDK ships with:
+
+- **Unit tests** — mocked HTTP
+- **Integration tests** — real API (opt-in)
+
+### Run unit tests
+
+```bash
+./vendor/bin/phpunit
+```
+
+### Integration tests (real API)
+
+Integration tests are skipped unless you enable them.
+
+Add to `.env`:
+
+```env
+PKPAYPLUS_INTEGRATION=1
+PKPAYPLUS_BASE_URL=http://localhost:8000
+PKPAYPLUS_SECRET_KEY=sk_test_xxx
+```
+
+Then run:
+
+```bash
+./vendor/bin/phpunit tests/Integration/ProductsIntegrationTest.php --testdox
+```
+
+## Common errors
+
+### Missing secret key
+
+Ensure your environment has:
+
+```env
+PKPAYPLUS_SECRET_KEY=sk_test_xxx
+```
+
+## Security notes
+
+- Never expose your secret key in frontend or client-side code.
+- Use the **publishable key** for client-side checkout.
+- Use the **secret key** only on the backend.
+
+## Resources
+
+- [PkPayPlus PHP SDK on GitHub](https://github.com/pkpayplus/pkpayplus-php)
+- [Composer package](https://packagist.org/packages/pkpayplus/pkpayplus-php)

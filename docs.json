@@ -2,15 +2,12 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "PkPayPlus Documentation",
-
   "colors": {
     "primary": "#ffffff",
     "light": "#1c51fb",
     "dark": "#1c51fb"
   },
-
   "favicon": "/favicon.ico",
-
   "navigation": {
     "tabs": [
       {
@@ -26,30 +23,30 @@
           {
             "group": "Accept Payments",
             "icon": "credit-card",
-            "pages": []
+            "pages": ["accept-payments"]
           },
           {
             "group": "Subscriptions",
             "icon": "recycle",
-            "pages": []
+            "pages": ["subscriptions"]
           },
           {
             "group": "Payouts",
             "icon": "money-bill-1",
-            "pages": []
+            "pages": ["payouts"]
           },
           {
             "group": "Integrations",
             "icon": "plug",
-            "pages": []
+            "pages": [
+              "integrations/php"
+            ]
           }
         ]
       }
     ]
   },
-
   "logo": "/images/PkpayLogo.webp",
-
   "navbar": {
     "links": [
       {
@@ -63,7 +60,6 @@
       "href": "https://dashboard.mintlify.com"
     }
   },
-
   "contextual": {
     "options": [
       "copy",
@@ -76,17 +72,14 @@
       "vscode"
     ]
   },
-
   "appearance": {
     "default": "dark",
     "strict": true
   },
-
   "styling": {
     "codeblocks": "dark",
     "eyebrows": "section"
   },
-
   "icons": {
     "library": "lucide"
   },
