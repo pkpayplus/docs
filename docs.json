@@ -74,7 +74,7 @@
   },
   "appearance": {
     "default": "dark",
-    "strict": true
+    "strict": false
   },
   "styling": {
     "codeblocks": "dark",
