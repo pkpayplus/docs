@@ -1,97 +1,114 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Welcome to PkPayPlus"
+sidebarTitle: "Introduction"
+description: "Accept payments, manage subscriptions, and send payouts with PkPayPlus. Integrate in minutes with our APIs and SDKs."
+icon: "rocket"
 ---
 
-## Setting up
+## What is PkPayPlus?
 
-Get your documentation site up and running in minutes.
+PkPayPlus is your **payments and merchant platform** to accept payments, run subscriptions, and send payouts. Use the merchant dashboard to manage your business and integrate with our **APIs and SDKs** for a seamless experience.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+<Info>
+**Built for merchants and developers**: Handle one-time payments, subscriptions, products, and checkout sessions. Use the PHP SDK, API keys, and webhooks to integrate with your backend.
+</Info>
 
-## Make it yours
+### Why choose PkPayPlus?
 
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+<CardGroup cols={2}>
+  <Card title="Merchant dashboard" icon="layout-dashboard">
+    Manage products, orders, API keys, and settings in one place at [merchant.pkpayplus.com](https://merchant.pkpayplus.com/)
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="Developer-friendly" icon="code">
+    REST APIs and official SDKs (e.g. PHP) for fast integration
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="Accept payments" icon="credit-card">
+    One-time and recurring payments with flexible checkout
   </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="Subscriptions & payouts" icon="repeat">
+    Recurring billing and payouts—docs and features coming soon
   </Card>
-</Columns>
+</CardGroup>
 
-## Create beautiful pages
+## Quick start
 
-Everything you need to create world-class documentation.
+Get up and running with PkPayPlus in a few steps:
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+<Steps>
+  <Step title="Create your account">
+    Sign up at [merchant.pkpayplus.com/sign-up](https://merchant.pkpayplus.com/sign-up) with your email.
 
-## Need inspiration?
+    <Check>
+      Verify your account so you can access the dashboard and API keys.
+    </Check>
+  </Step>
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+  <Step title="Get your API keys">
+    In the dashboard, go to [API Keys](https://merchant.pkpayplus.com/dashboard/api-keys). Copy your **Secret Key** for server-side use—never expose it in frontend code.
+  </Step>
+
+  <Step title="Integrate">
+    Use our docs and SDKs to accept payments and manage products:
+
+    <CardGroup cols={3}>
+      <Card title="Accept payments" icon="credit-card" href="/accept-payments">
+        Guides for accepting one-time and recurring payments
+      </Card>
+      <Card title="PHP integration" icon="code" href="/integrations/php">
+        Official PHP SDK for products and checkout sessions
+      </Card>
+      <Card title="Subscriptions" icon="recycle" href="/subscriptions">
+        Recurring billing—coming soon
+      </Card>
+    </CardGroup>
+  </Step>
+</Steps>
+
+## Integrations
+
+Connect PkPayPlus to your stack with our official integrations. More are on the way.
+
+<CardGroup cols={2}>
+  <Card title="PHP SDK" icon="php" href="/integrations/php">
+    Use the official PHP SDK in plain PHP or Laravel. Manage products and checkout sessions with your Merchant Secret Key.
+  </Card>
+  <Card title="More integrations" icon="plug" href="/integrations/php">
+    Additional SDKs and plugins—coming soon. Check the docs for updates.
+  </Card>
+</CardGroup>
+
+## Product areas
+
+Explore what you can build with PkPayPlus:
+
+<CardGroup cols={2}>
+  <Card title="Accept payments" icon="credit-card" href="/accept-payments">
+    Checkout flows, payment methods, and success or failure handling
+  </Card>
+  <Card title="Subscriptions" icon="recycle" href="/subscriptions">
+    Plans, billing cycles, and managing subscribers—coming soon
+  </Card>
+  <Card title="Payouts" icon="money-bill-1" href="/payouts">
+    Bank accounts, payout schedules, and tracking—coming soon
+  </Card>
+  <Card title="Integrations" icon="plug" href="/integrations/php">
+    PHP and more—SDKs and plugins for your stack
+  </Card>
+</CardGroup>
+
+## Need help?
+
+<CardGroup cols={2}>
+  <Card title="Merchant dashboard" icon="layout-dashboard" href="https://merchant.pkpayplus.com/" target="_blank">
+    Log in to manage your account, products, and API keys
+  </Card>
+  <Card title="API keys" icon="key" href="https://merchant.pkpayplus.com/dashboard/api-keys" target="_blank">
+    View and manage your API keys in the dashboard
+  </Card>
+  <Card title="Documentation" icon="book" href="/introduction">
+    Browse guides and references in this docs site
+  </Card>
+  <Card title="Contact support" icon="headphones" href="mailto:support@pkpayplus.com">
+    Email support for direct help
+  </Card>
+</CardGroup>
