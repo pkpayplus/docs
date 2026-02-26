@@ -104,11 +104,28 @@
   "footer": {
     "links": [
       {
-        "header": "gvgsgdvagd",
+        "header": "Product",
         "items": [
           {
-            "label": "sadasda",
+            "label": "Dashboard",
+            "href": "https://merchant.pkpayplus.com/"
+          },
+          {
+            "label": "Documentation",
             "href": "/"
+          },
+          {
+            "label": "Support",
+            "href": "mailto:support@pkpayplus.com"
+          }
+        ]
+      },
+      {
+        "header": "Community",
+        "items": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/pkpayplus"
           }
         ]
       }
