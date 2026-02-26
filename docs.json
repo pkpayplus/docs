@@ -131,10 +131,6 @@
   "interaction": {
     "drilldown": true
   },
-  "banner": {
-    "content": "🚀 Welcome to PkPayPlus Documentation",
-    "dismissible": false
-  },
   "errors": {
     "404": {
       "redirect": true
