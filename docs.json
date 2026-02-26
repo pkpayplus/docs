@@ -37,6 +37,11 @@
             "group": "Payouts",
             "icon": "money-bill-1-wave",
             "pages": []
+          },
+          {
+            "group": "Integrations",
+            "icon": "plug",
+            "pages": []
           }
         ]
       }
