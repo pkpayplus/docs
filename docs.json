@@ -14,8 +14,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book"
+        "tab": "Documentation"
       },
       {
         "tab": "Guides",
@@ -65,6 +64,15 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "External Integrations"
+      },
+      {
+        "tab": "Changelog"
+      },
+      {
+        "tab": "Community Projects"
       }
     ]
   },
@@ -121,5 +129,9 @@
   },
   "interaction": {
     "drilldown": true
+  },
+  "banner": {
+    "content": "Welcome to PkPayPlus Documentation",
+    "dismissible": false
   }
 }
