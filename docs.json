@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "maple",
   "name": "PkPayPlus Documentation",
   "colors": {
-    "primary": "#ffffff",
+    "primary": "#1c51fb",
     "light": "#1c51fb",
-    "dark": "#1c51fb"
+    "dark": "#5b8aff"
   },
   "favicon": "/favicon.ico",
   "navigation": {
